@@ -136,6 +136,9 @@ section{
     margin-top: 94px;
     margin-bottom: 94px;
 }
+.feature-list{
+    display: flex;
+}
 
 .feature-list .title{
     margin-top: 0;
@@ -157,6 +160,9 @@ section{
     font-size: 36px;
         line-height: 1.17;
         text-align: center;
+}
+.work-list{
+    display: flex;
 }
 /* Team */
 .team{
