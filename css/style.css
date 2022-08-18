@@ -329,7 +329,12 @@ padding-top: 9px;
 .portfolio-card{
     box-sizing: border-box;
     width: 370px;
-    border: 1px solid #EEEEEE;
+    /* border: 1px solid #EEEEEE; */
+}
+.ramka{
+    border-left:1px solid #EEEEEE;;
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
 }
 .portfolio-card{
     margin-bottom: 30px;
