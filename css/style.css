@@ -8,6 +8,7 @@
     --card-color:#F5F4FA;
     --footer-adres:#FFFFFF99;
     --button-back-color:#188CE8;
+    --ramka-color:#EEEEEE;
 }
 body{
     background-color:var(--white-color);
@@ -332,9 +333,9 @@ padding-top: 9px;
     /* border: 1px solid #EEEEEE; */
 }
 .ramka{
-    border-left:1px solid #EEEEEE;;
-    border-bottom: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
+    border-left:1px solid var(--ramka-color);
+    border-bottom: 1px solid var(--ramka-color);
+    border-right: 1px solid var(--ramka-color);
 }
 .portfolio-card{
     margin-bottom: 30px;
