@@ -54,7 +54,7 @@ body{
     align-items: center;
     /* border-bottom:1px solid #ECECEC; */
 }
-.bord{
+.header{
     border-bottom: 1px solid #ECECEC;
 }
 .site-nav{
@@ -107,8 +107,8 @@ body{
     background-color:var(--footer-color);
     text-align: center;
     margin-top: 0;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .hero-title{
     color:var(--white-color);
@@ -119,7 +119,7 @@ body{
         text-align: center;
         text-transform: uppercase;
         margin-top: 0;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
 }
 .buttons{
     background-color: var(--hover-color);
@@ -130,9 +130,12 @@ body{
         line-height: 1.9;
         letter-spacing: 0.06em;
         text-align: center;
+        padding: 10px 32px;
+        border-color: transparent;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
          border-radius: 4px;
          cursor: pointer;
+
 }
 .buttons:hover,
 .buttons:focus{
@@ -169,7 +172,7 @@ body{
     margin-left: 30px;
 }
 /* Work */
-.work-title{
+.htitle{
     color:var(--title-text-color);
     margin-bottom: 50px;
     margin-top: 0;
@@ -196,20 +199,14 @@ img {
     background-color:var(--card-color);
     /* padding-bottom: 0; */
 }
-.team-title{
-    color: var(--title-text-color);
-    font-size: 36px;
-        line-height: 1.17;
-        text-align: center;
-        margin-bottom: 50px;
-        margin-top: 0;
-}
+
+
 .team-list .title{
     color: var(--title-text-color);
     font-weight: 500;
         font-size: 16px;
         line-height: 1.19;
-        margin-top: 30px;
+        margin-top: 0;
         margin-bottom: 10px;
         text-align: center;
 }
@@ -230,16 +227,20 @@ img {
 .team-list .item{
         font-size: 16px;
         line-height: 1.19;
-        padding-bottom: 30px;
         margin-bottom: 0;
         margin-top: 0;
         text-align: center;
 }
-/* Footer */
-.downpage{
-    background-color:var(--footer-color);
+.name{
+    padding: 30px 0;
 }
-.downpage .logo{
+/* Footer */
+.footer{
+    background-color:var(--footer-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+footer .logo{
         font-family: Raleway;
         font-size: 26px;
         line-height: 1.19;
@@ -247,10 +248,9 @@ img {
         color:var(--hover-color);
         text-decoration:none;
         display:inline-block;
-        padding-top: 60px;
-        padding-bottom: 20px;
+        margin-bottom: 20px;
     }
-.downpage .logo2{
+.footer .logo2{
     font-family: Raleway;
     font-size: 26px;
     line-height: 1.19;
@@ -261,11 +261,10 @@ img {
 .adres-nav{
     color: var(--white-color);
     font-style: normal;
-    padding-bottom: 60px;
 } 
 .adres-nav .item+.item{
 display: block;
-padding-top: 9px;
+margin-top: 9px;
 }
 .adres-nav .secondary-link{
     color:var(--footer-adres);
@@ -280,6 +279,7 @@ padding-top: 9px;
 .portfolio-nav{
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .portfolio-nav .item+.item{
     margin-left: 8px;
@@ -297,12 +297,12 @@ padding-top: 9px;
         cursor: pointer;
         border-color: transparent;
         padding: 6px 22px;
-        margin-bottom: 50px;
 }
 .portfolio-nav .filter:hover,
 .portfolio-nav .filter:focus{
     background-color: var(--hover-color);
     color: var(--white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     
 }
 .visually-hidden {
@@ -327,13 +327,14 @@ padding-top: 9px;
 }
 .portfolio-card{
     box-sizing: border-box;
-    width: 370px;
+    width: calc(100%-60px)/3;
     /* border: 1px solid #EEEEEE; */
 }
-.ramka{
+.frame{
     border-left:1px solid var(--ramka-color);
     border-bottom: 1px solid var(--ramka-color);
     border-right: 1px solid var(--ramka-color);
+    padding: 20px 24px;
 }
 .portfolio-card{
     margin-bottom: 30px;
@@ -352,23 +353,16 @@ padding-top: 9px;
         letter-spacing: 0.06em;
         text-align: left;
         color: var(--title-text-color);
-        padding-top: 20px;
-        padding-bottom: 4px;
-        padding-left: 24px;
-        padding-right: 24px;
-        margin-bottom: 0;
+        margin-bottom: 4px;
         margin-top: 0;
 }
 .card-item{
-        margin-bottom: 0;
-        margin-top: 0;
-        padding-bottom: 20px;
-        padding-left: 24px;
-        padding-right: 24px;
         font-size: 16px;
         line-height: 1.87;
         text-align: left;
+        margin-bottom: 0;
+        margin-top: 0;
         color: var(--outlink-color)
         
-        
+           
 }
