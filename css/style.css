@@ -102,6 +102,8 @@ body{
     background-color:var(--footer-color);
     text-align: center;
     margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .hero-title{
     color:var(--white-color);
@@ -133,8 +135,11 @@ body{
 }
 /* Section */
 section{
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.feature{
+    padding-bottom: 0;
 }
 .feature-list{
     display: flex;
@@ -152,10 +157,19 @@ section{
     margin-top: 0;
     margin-bottom: 0;
 }
+.feature-list .item{
+    width: 270px;
+}
+.feature-list .item+.item{
+    margin-left: 30px;
+}
 /* Work */
+.work{
+    padding-bottom: 0;
+}
 .work-title{
     color:var(--title-text-color);
-    margin-bottom: 0;
+    margin-bottom: 50px;
     margin-top: 0;
     font-size: 36px;
         line-height: 1.17;
@@ -164,16 +178,30 @@ section{
 .work-list{
     display: flex;
 }
+.work-list .item{
+    width: 370px;
+}
+.work-list .item+.item{
+    margin-left: 30px;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 /* Team */
 .team{
     background-color:var(--card-color);
     margin-bottom: 0;
+    padding-bottom: 0;
 }
 .team-title{
     color: var(--title-text-color);
     font-size: 36px;
         line-height: 1.17;
         text-align: center;
+        margin-bottom: 50px;
+        margin-top: 0;
 }
 .team-list .title{
     color: var(--title-text-color);
@@ -182,15 +210,30 @@ section{
         line-height: 1.19;
         margin-top: 30px;
         margin-bottom: 10px;
+        text-align: center;
+}
+.team-list{
+    display: flex;
+}
+.team-list .card{
+    width: 270px;
+    margin-bottom:94px;
+}
+.team-list .card+.card{
+    margin-left: 30px;
 }
 .team-list .card{
     background-color:var(--white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
 }
 .team-list .item{
         font-size: 16px;
         line-height: 1.19;
+        padding-bottom: 30px;
         margin-bottom: 0;
         margin-top: 0;
+        text-align: center;
 }
 /* Footer */
 .downpage{
