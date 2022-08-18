@@ -28,7 +28,7 @@ body{
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: solid 1px red;
+    /* outline: solid 1px red; */
 }
 .logo {
     font-family: Raleway;
@@ -51,6 +51,10 @@ body{
 .main-nav{
     display: flex;
     align-items: center;
+    /* border-bottom:1px solid #ECECEC; */
+}
+.bord{
+    border-bottom: 1px solid #ECECEC;
 }
 .site-nav{
     display: flex;
@@ -164,9 +168,6 @@ section{
     margin-left: 30px;
 }
 /* Work */
-.work{
-    padding-bottom: 0;
-}
 .work-title{
     color:var(--title-text-color);
     margin-bottom: 50px;
@@ -192,8 +193,8 @@ img {
 /* Team */
 .team{
     background-color:var(--card-color);
-    margin-bottom: 0;
     padding-bottom: 0;
+    padding-top: 0;
 }
 .team-title{
     color: var(--title-text-color);
@@ -269,6 +270,13 @@ img {
     color: var(--hover-color);}
     /* Portfolio */
     /* Portfolio nav */
+.portfolio-nav{
+    display: flex;
+    justify-content: center;
+}
+.portfolio-nav .item+.item{
+    margin-left: 8px;
+}
 .portfolio-nav .filter{
     background-color:var(--card-color);
     color:var(--title-text-color);
@@ -280,6 +288,9 @@ img {
         text-align: center;
         border-radius: 4px;
         cursor: pointer;
+        border-color: transparent;
+        padding: 6px 22px;
+        margin-bottom: 50px;
 }
 .portfolio-nav .filter:hover,
 .portfolio-nav .filter:focus{
@@ -301,9 +312,27 @@ img {
 }
 .portfolio-list{
     text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 .portfolio-card .card-link{
     text-decoration: none; 
+}
+.portfolio-card{
+    box-sizing: border-box;
+    width: 370px;
+    border: 1px solid #EEEEEE;
+}
+.portfolio-card{
+    margin-bottom: 30px;
+    margin-right: 30px;
+    
+}
+.portfolio-card:nth-child(3n){
+    margin-right: 0;
+}
+.portfolio-card:nth-last-child(-n+3){
+    margin-bottom: 0;
 }
 .card-name{
         font-size: 18px;
@@ -311,10 +340,23 @@ img {
         letter-spacing: 0.06em;
         text-align: left;
         color: var(--title-text-color);
+        padding-top: 20px;
+        padding-bottom: 4px;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-bottom: 0;
+        margin-top: 0;
 }
 .card-item{
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-bottom: 20px;
+        padding-left: 24px;
+        padding-right: 24px;
         font-size: 16px;
         line-height: 1.87;
         text-align: left;
         color: var(--outlink-color)
+        
+        
 }
