@@ -138,7 +138,7 @@ body{
     background-color:var(--button-back-color)
 }
 /* Section */
-section{
+.section{
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -247,6 +247,9 @@ img {
         letter-spacing: 0.03em;
         color:var(--hover-color);
         text-decoration:none;
+        display:inline-block;
+        padding-top: 60px;
+        padding-bottom: 20px;
     }
 .downpage .logo2{
     font-family: Raleway;
@@ -259,7 +262,12 @@ img {
 .adres-nav{
     color: var(--white-color);
     font-style: normal;
+    padding-bottom: 60px;
 } 
+.adres-nav .item+.item{
+display: block;
+padding-top: 9px;
+}
 .adres-nav .secondary-link{
     color:var(--footer-adres);
     text-decoration: none;
